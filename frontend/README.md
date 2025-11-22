@@ -26,7 +26,7 @@ La aplicación estará disponible en `http://localhost:5173`
 
 ## Estado
 
-Versión básica funcional. Pendiente: búsqueda, detalles, PostgreSQL.
+Versión 0.30 - Con navegación y página de detalles. Pendiente: búsqueda, filtros, PostgreSQL.
 
 ## Tecnologías
 

@@ -12,7 +12,7 @@ ArtBook/
 
 ## Estado del Proyecto
 
-**25% Completado** - Versión básica funcional
+**30% Completado** - Versión con navegación y detalles
 
 ### ✅ Implementado
 - Estructura base del proyecto (backend/ y frontend/)
@@ -22,15 +22,17 @@ ArtBook/
 - Diseño responsivo con paleta morada (#7C3AED)
 - Lista de técnicas con tarjetas informativas
 - Indicadores de dificultad (Básico, Intermedio, Avanzado)
+- **React Router configurado** - Navegación entre páginas
+- **Componentes separados** - Header, TechniqueCard, Footer
+- **Página de detalles** - Vista completa de cada técnica
+- **Mejoras visuales** - Animaciones, hover effects, loading states
 
 ### ⏳ Pendiente
 - Integración con PostgreSQL
 - Sistema de búsqueda
-- Página de detalles individual
+- Filtros por categoría/dificultad
 - CRUD completo (POST, PUT, DELETE)
-- Navegación con React Router
-- Componentes separados y organización
-- Mejoras visuales y animaciones
+- Mejoras visuales adicionales
 
 ## Instalación
 
