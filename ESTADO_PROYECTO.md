@@ -1,4 +1,4 @@
-# Estado del Proyecto ArtBook - 25% Completado
+# Estado del Proyecto ArtBook - 60% Completado
 
 ## ✅ Lo que está implementado
 
@@ -10,21 +10,32 @@
 - ✅ Middleware de JSON
 - ✅ Endpoints funcionales:
   - `GET /` - Estado de la API
-  - `GET /api/techniques` - Lista de todas las técnicas
+  - `GET /api/techniques` - Lista de todas las técnicas (con búsqueda y filtros)
   - `GET /api/techniques/:id` - Detalle de una técnica
+- ✅ Estructura en capas:
+  - `routes/` - Rutas de técnicas
+  - `controllers/` - Lógica de control
+  - `models/` - Acceso a datos (mock + soporte PostgreSQL opcional)
+  - `db.js` - Conexión opcional a PostgreSQL
 
 ### Frontend
 - ✅ React con Vite configurado
 - ✅ Tailwind CSS instalado y configurado
 - ✅ Paleta de colores morada (#7C3AED) implementada
-- ✅ Diseño responsivo básico
-- ✅ Componente principal con lista de técnicas
+- ✅ Diseño responsivo
+- ✅ Componentes separados:
+  - `Header`, `TechniqueCard`, `Footer`
+  - Páginas: `Home`, `TechniqueDetail`
+- ✅ Navegación con React Router
 - ✅ Tarjetas informativas con:
   - Nombre de la técnica
   - Descripción
   - Materiales necesarios
   - Nivel de dificultad (con colores)
-- ✅ Header y Footer
+  - Imagen ilustrativa (si existe en `/images`)
+- ✅ Página de detalles de cada técnica
+- ✅ Barra de búsqueda y filtro por dificultad
+- ✅ Manejo de estados de carga y errores
 
 ### Estructura
 - ✅ Proyecto bien organizado en carpetas
@@ -34,24 +45,19 @@
 
 ## ⏳ Pendiente por implementar
 
-### Backend (75% restante)
-- ⏳ Integración con PostgreSQL
-- ⏳ Crear esquema de base de datos
-- ⏳ Modelos y controladores separados
+### Backend (40% restante)
+- ⏳ Integración real con PostgreSQL (`USE_DB=true`)
+- ⏳ Crear esquema de base de datos definitivo
 - ⏳ Endpoints POST, PUT, DELETE
 - ⏳ Validación de datos
 - ⏳ Manejo de errores mejorado
 - ⏳ Variables de entorno completas
 
-### Frontend (75% restante)
-- ⏳ React Router para navegación
-- ⏳ Componentes separados (Header, Card, etc.)
-- ⏳ Página de detalles de técnica
-- ⏳ Sistema de búsqueda
-- ⏳ Filtros y paginación
-- ⏳ Loading states
-- ⏳ Manejo de errores
-- ⏳ Animaciones y transiciones
+### Frontend (40% restante)
+- ⏳ Paginación
+- ⏳ Filtros adicionales (por categoría, etc.)
+- ⏳ Animaciones y transiciones avanzadas
+- ⏳ Mejoras de accesibilidad
 
 ### Base de Datos
 - ⏳ Instalación de PostgreSQL

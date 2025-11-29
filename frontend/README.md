@@ -26,13 +26,13 @@ La aplicación estará disponible en `http://localhost:5173`
 
 ## Estado
 
-Versión 0.30 - Con navegación y página de detalles. Pendiente: búsqueda, filtros, PostgreSQL.
+Versión 0.60 - Navegación, página de detalles, búsqueda y filtros. Pendiente: PostgreSQL e integración completa.
 
 ## Tecnologías
 
 - React 18
 - Vite
 - Tailwind CSS
-- React Router (pendiente de implementar)
+- React Router
 
 

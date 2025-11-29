@@ -12,12 +12,14 @@ ArtBook/
 
 ## Estado del Proyecto
 
-**30% Completado** - Versión con navegación y detalles
+**60% Completado** - Versión con navegación, detalles, búsqueda y filtros
 
 ### ✅ Implementado
 - Estructura base del proyecto (backend/ y frontend/)
 - Backend con Express y datos mock
 - API REST con endpoints básicos
+- Capas en backend: `routes`, `controllers`, `models`
+- Soporte para búsqueda y filtros en `/api/techniques`
 - Frontend con React + Vite + Tailwind CSS
 - Diseño responsivo con paleta morada (#7C3AED)
 - Lista de técnicas con tarjetas informativas
@@ -25,14 +27,15 @@ ArtBook/
 - **React Router configurado** - Navegación entre páginas
 - **Componentes separados** - Header, TechniqueCard, Footer
 - **Página de detalles** - Vista completa de cada técnica
-- **Mejoras visuales** - Animaciones, hover effects, loading states
+- **Barra de búsqueda y filtro por dificultad** en Home
+- **Manejo de errores y estados de carga** en el frontend
+- Carpeta de imágenes en `frontend/public/images` con nombres definidos
 
 ### ⏳ Pendiente
-- Integración con PostgreSQL
-- Sistema de búsqueda
-- Filtros por categoría/dificultad
+- Integración real con PostgreSQL (`USE_DB=true`)
 - CRUD completo (POST, PUT, DELETE)
-- Mejoras visuales adicionales
+- Paginación
+- Mejoras visuales adicionales y animaciones
 
 ## Instalación
 

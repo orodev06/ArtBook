@@ -80,9 +80,17 @@ function TechniqueDetail() {
       {/* Contenido principal */}
       <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
         {/* Imagen/Header */}
-        <div className="h-64 bg-purple-light flex items-center justify-center">
-          <span className="text-white text-3xl font-bold">{technique.name}</span>
-        </div>
+        {technique.image_url ? (
+          <img
+            src={technique.image_url}
+            alt={`Ejemplo de ${technique.name}`}
+            className="w-full h-64 object-cover"
+          />
+        ) : (
+          <div className="h-64 bg-purple-light flex items-center justify-center">
+            <span className="text-white text-3xl font-bold">{technique.name}</span>
+          </div>
+        )}
 
         {/* Información */}
         <div className="p-8">

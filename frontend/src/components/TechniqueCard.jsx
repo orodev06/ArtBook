@@ -10,9 +10,17 @@ function TechniqueCard({ technique }) {
   return (
     <Link to={`/technique/${technique.id}`}>
       <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200 cursor-pointer transform hover:-translate-y-1">
-        <div className="h-48 bg-purple-light flex items-center justify-center">
-          <span className="text-white text-lg font-semibold">{technique.name}</span>
-        </div>
+        {technique.image_url ? (
+          <img
+            src={technique.image_url}
+            alt={`Ejemplo de ${technique.name}`}
+            className="w-full h-48 object-cover"
+          />
+        ) : (
+          <div className="h-48 bg-purple-light flex items-center justify-center">
+            <span className="text-white text-lg font-semibold">{technique.name}</span>
+          </div>
+        )}
         <div className="p-6">
           <h2 className="text-2xl font-bold text-purple-primary mb-3">
             {technique.name}
